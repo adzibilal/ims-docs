@@ -1,0 +1,11 @@
+{
+  "title": "Admin Guide",
+  "pages": [
+    "index",
+    "master-data",
+    "academic",
+    "commerce",
+    "finance",
+    "settings"
+  ]
+}

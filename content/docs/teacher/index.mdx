@@ -1,0 +1,40 @@
+---
+title: Teacher Dashboard
+description: Panduan dasar untuk masuk dan bernavigasi bagi Guru
+---
+
+# Getting Started: Teacher Dashboard
+
+Selamat datang di IMS Dashboard! Sebagai pengajar, Anda menggunakan aplikasi ini untuk mengatur operasional mengajar sehari-hari.
+
+## Alur Kerja Utama Guru
+
+Sebagai guru, tugas administratif Anda di sistem ini sangat sederhana:
+
+<Mermaid
+  chart={`
+flowchart LR
+    A["Cek Jadwal Hari Ini"] --> B["Ajar Siswa di Kelas"]
+    B --> C["Isi Absensi & Catatan"]
+    C --> D["Ubah Status Sesi ke Completed"]
+    D -. Akhir Bulan .-> E["Lihat Slip Gaji (Payroll)"]
+`}
+/>
+
+## 1. Cara Login
+
+1. Buka tautan IMS Dashboard.
+2. Masukkan **Email** dan **Password** Anda. (Minta password ke admin jika lupa).
+3. Klik **Sign In**.
+
+[Image desc: Halaman Login Teacher]
+
+## 2. Navigasi Dashboard
+
+- **Dashboard**: Ringkasan kelas hari ini.
+- **My Classes**: Daftar kelas reguler.
+- **My Schedules**: Kalender mengajar rutin.
+- **My Sessions**: Detail pertemuan aktual.
+- **Payroll**: Slip honor.
+
+[Image desc: Tampilan Dashboard Utama Guru]

@@ -1,0 +1,30 @@
+---
+title: Pendahuluan Akademik
+description: Alur kerja modul akademik
+---
+
+# Manajemen Akademik
+
+Modul **Academic** mengelola seluruh siklus pembelajaran, mulai dari mendefinisikan kurikulum (Course) hingga menjadwalkan pertemuan rutin (Schedules) dan pertemuan aktual (Sessions).
+
+## Siklus Akademik
+
+<Mermaid
+  chart={`
+stateDiagram-v2
+    [*] --> Courses : 1. Buat Program Studi
+    Courses --> Classes : 2. Buka Kelas Baru
+    Classes --> Enrollments : 3. Masukkan Siswa
+    Classes --> Schedules : 4. Atur Jadwal Rutin
+    Schedules --> Sessions : 5. Generate Pertemuan Aktual
+    Sessions --> Attendance : 6. Guru Isi Absensi
+    Attendance --> [*]
+`}
+/>
+
+Silakan navigasi melalui sub-menu:
+- [Courses](/docs/admin/academic/courses)
+- [Classes](/docs/admin/academic/classes)
+- [Enrollments](/docs/admin/academic/enrollments)
+- [Schedules](/docs/admin/academic/schedules)
+- [Sessions & Attendance](/docs/admin/academic/sessions)

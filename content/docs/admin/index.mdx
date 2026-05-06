@@ -1,0 +1,45 @@
+---
+title: Admin Dashboard
+description: Panduan memulai menggunakan dashboard admin
+---
+
+# Getting Started: Admin Dashboard
+
+Selamat datang di IMS Dashboard untuk Admin! Panduan ini akan membantu Anda memahami tampilan awal dan fitur utama di dalam dashboard admin.
+
+## 1. Login ke Dashboard
+
+1. Buka halaman login IMS Dashboard di browser Anda.
+2. Masukkan **Email** dan **Password** admin Anda.
+3. Klik tombol **Sign In**.
+
+[Image desc: Halaman Login IMS]
+
+## Alur Kerja Admin (Admin Workflow)
+
+Berikut adalah gambaran besar bagaimana Admin mengelola sistem IMS:
+
+<Mermaid
+  chart={`
+flowchart TD
+    A["Master Data Setup"] --> B["Academic Setup"]
+    B --> C["Commerce & Transaksi"]
+    C --> D["Finance & Payroll"]
+    
+    A1("Input Siswa & Guru") -.-> A
+    A2("Input Instrumen & Ruangan") -.-> A
+    
+    B1("Buat Kursus") -.-> B
+    B2("Buat Kelas & Jadwal") -.-> B
+    B3("Daftarkan Siswa") -.-> B
+    
+    C1("Buat Paket Harga") -.-> C
+    C2("Catat Pesanan") -.-> C
+    C3("Catat Pembayaran") -.-> C
+    
+    D1("Hitung Kehadiran") -.-> D
+    D2("Generate Payroll Guru") -.-> D
+`}
+/>
+
+Pilih menu di sidebar untuk melihat panduan spesifik per modul.

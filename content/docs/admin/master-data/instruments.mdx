@@ -1,0 +1,38 @@
+---
+title: Instrumen, Level, & Kategori
+description: Mengelola data referensi untuk kursus
+---
+
+# Kelola Instrumen, Level, & Kategori
+
+Data ini digunakan sebagai atribut ketika membuat Kursus (Course).
+
+## Alur Pembuatan Atribut
+
+<Mermaid
+  chart={`
+graph LR
+    A[Buat Kategori] --> B[Buat Level]
+    B --> C[Buat Instrumen]
+    C --> D[Gabungkan menjadi Kursus]
+`}
+/>
+
+## 1. Menambah Instrumen
+Misalnya "Piano", "Biola", atau "Gitar".
+1. Buka menu **Master Data** > **Instruments**.
+2. Klik **+ Add New**.
+3. Masukkan nama instrumen dan simpan.
+
+[Image desc: Halaman Tambah Instrumen]
+
+## 2. Menambah Level
+Misalnya "Beginner", "Intermediate", "Grade 1", "Grade 2".
+1. Buka menu **Master Data** > **Levels**.
+2. Klik **+ Add New**.
+3. Masukkan nama level dan simpan.
+
+## 3. Menambah Kategori
+Kategori biasanya digunakan untuk membedakan genre atau departemen, misalnya "Klasik", "Pop", "Vokal".
+1. Buka menu **Master Data** > **Categories**.
+2. Tambahkan kategori baru dengan cara yang sama.

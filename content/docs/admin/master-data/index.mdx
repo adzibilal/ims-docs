@@ -1,0 +1,26 @@
+---
+title: Pendahuluan Master Data
+description: Pengenalan modul Master Data
+---
+
+# Master Data
+
+Modul **Master Data** merupakan fondasi sistem. Semua transaksi dan penjadwalan bergantung pada kelengkapan data di modul ini.
+
+## Hubungan Antar Data
+
+<Mermaid
+  chart={`
+erDiagram
+    STUDENT ||--o{ ENROLLMENT : has
+    TEACHER ||--o{ CLASSES : teaches
+    INSTRUMENT ||--o{ COURSE : defines
+    ROOM ||--o{ SCHEDULE : hosts
+`}
+/>
+
+Silakan pilih sub-menu di samping untuk melihat panduan spesifik:
+- [Siswa (Students)](/docs/admin/master-data/students)
+- [Guru (Teachers)](/docs/admin/master-data/teachers)
+- [Instrumen & Kategori](/docs/admin/master-data/instruments)
+- [Ruangan (Rooms)](/docs/admin/master-data/rooms)

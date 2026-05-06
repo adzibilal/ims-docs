@@ -1,0 +1,26 @@
+---
+title: Pendahuluan Finance
+description: Manajemen Penggajian dan Laporan Keuangan
+---
+
+# Finance & Reports
+
+Modul Keuangan difokuskan pada pengelolaan **Payroll Guru** berdasarkan sesi mengajar dan pemantauan **Laporan Kinerja**.
+
+## Alur Payroll Guru
+
+<Mermaid
+  chart={`
+stateDiagram-v2
+    Draft: Generate Payroll
+    Review: Verifikasi Absensi & Tarif
+    Published: Slip Gaji Siap Dilihat Guru
+    Paid: Dana Telah Ditransfer
+    
+    [*] --> Draft
+    Draft --> Review
+    Review --> Published
+    Published --> Paid
+    Paid --> [*]
+`}
+/>

@@ -1,0 +1,9 @@
+{
+  "title": "Commerce",
+  "pages": [
+    "index",
+    "packages",
+    "orders",
+    "payments"
+  ]
+}

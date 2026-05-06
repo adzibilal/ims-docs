@@ -1,0 +1,37 @@
+---
+title: Input Attendance
+description: Panduan mengisi kehadiran siswa
+---
+
+# Mengisi Daftar Hadir (Attendance)
+
+Ini adalah tugas terpenting guru di aplikasi. Tanpa absensi dan status *Completed*, sesi mengajar tidak akan dihitung dalam pembayaran honor akhir bulan.
+
+## Cara Mengisi Absensi
+
+1. Buka menu **My Sessions**.
+2. Cari kelas yang baru saja selesai diajarkan.
+3. Klik tombol **Attendance** (atau dari menu aksi).
+4. Di daftar siswa, ubah status kehadiran:
+   - **Present**: Hadir
+   - **Absent**: Tidak hadir (alfa)
+   - **Excused**: Izin/Sakit (Admin dapat membuatkan kelas ganti nantinya).
+5. Isi **Notes** (Catatan) untuk mencatat progres materi yang diajarkan hari ini. Catatan ini penting untuk pelacakan perkembangan siswa.
+6. Klik **Save Attendance**.
+
+[Image desc: Form Input Attendance]
+
+## Menyelesaikan Sesi
+Setelah absensi tersimpan:
+1. Kembali ke daftar **My Sessions**.
+2. Klik tombol untuk **Mark as Completed** pada sesi tersebut.
+
+<Mermaid
+  chart={`
+stateDiagram-v2
+    Scheduled --> FormAbsensi : Guru Klik Attendance
+    FormAbsensi --> Scheduled : Simpan Hadir/Sakit/Alfa
+    Scheduled --> Completed : Guru Klik Mark as Completed
+    Completed --> Payroll : Masuk ke Hitungan Gaji
+`}
+/>

@@ -1,0 +1,22 @@
+---
+title: Pendahuluan Commerce
+description: Siklus Penjualan dan Tagihan
+---
+
+# Modul Commerce
+
+Modul Commerce digunakan untuk mencatat penjualan paket belajar kepada siswa, mengeluarkan invoice, dan melacak pembayaran.
+
+## Siklus Commerce
+
+<Mermaid
+  chart={`
+flowchart TD
+    A["Buat Paket Belajar"] --> B["Siswa Beli Paket (Order)"]
+    B --> C["Sistem Generate Invoice PDF"]
+    C --> D["Siswa Melakukan Pembayaran (Payment)"]
+    D --> E{"Apakah Lunas?"}
+    E -- Ya --> F["Status Order: Paid"]
+    E -- Belum --> G["Status Order: Partial"]
+`}
+/>

@@ -1,0 +1,10 @@
+{
+  "title": "Master Data",
+  "pages": [
+    "index",
+    "students",
+    "teachers",
+    "instruments",
+    "rooms"
+  ]
+}

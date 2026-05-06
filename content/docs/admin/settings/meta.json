@@ -1,0 +1,9 @@
+{
+  "title": "Settings",
+  "pages": [
+    "index",
+    "app-settings",
+    "users",
+    "roles"
+  ]
+}
