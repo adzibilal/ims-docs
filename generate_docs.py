@@ -23,7 +23,7 @@ Selamat datang di IMS Dashboard untuk Admin! Panduan ini akan membantu Anda mema
 2. Masukkan **Email** dan **Password** admin Anda.
 3. Klik tombol **Sign In**.
 
-[Image desc: Halaman Login IMS]
+![Halaman Login IMS](/docs/halaman-login-ims.png)
 
 ## Alur Kerja Admin (Admin Workflow)
 
@@ -99,7 +99,7 @@ description: Panduan menambah, mengedit, dan menghapus siswa
    - Alamat
 4. Klik **Save** untuk menyimpan data.
 
-[Image desc: Form Tambah Siswa Baru]
+![Form Tambah Siswa Baru](/docs/form-tambah-siswa-baru.png)
 
 ## 2. Mengedit Data Siswa
 Jika ada perubahan nomor telepon atau alamat:
