@@ -1,37 +1,60 @@
 ---
-title: Input Attendance
-description: Panduan mengisi kehadiran siswa
+title: Mengisi Absensi
+description: Panduan langkah demi langkah mencatat kehadiran siswa dan progres materi.
 ---
 
 # Mengisi Daftar Hadir (Attendance)
 
-Ini adalah tugas terpenting guru di aplikasi. Tanpa absensi dan status *Completed*, sesi mengajar tidak akan dihitung dalam pembayaran honor akhir bulan.
+Mencatat absensi adalah tugas harian terpenting bagi Guru. Data ini digunakan untuk:
+1.  Memantau progres belajar siswa.
+2.  Menghitung sisa paket pertemuan siswa.
+3.  **Menghitung otomatis honor mengajar Anda.**
 
-## Cara Mengisi Absensi
+## Cara Cepat: Melalui Dashboard
 
-1. Buka menu **My Sessions**.
-2. Cari kelas yang baru saja selesai diajarkan.
-3. Klik tombol **Attendance** (atau dari menu aksi).
-4. Di daftar siswa, ubah status kehadiran:
-   - **Present**: Hadir
-   - **Absent**: Tidak hadir (alfa)
-   - **Excused**: Izin/Sakit (Admin dapat membuatkan kelas ganti nantinya).
-5. Isi **Notes** (Catatan) untuk mencatat progres materi yang diajarkan hari ini. Catatan ini penting untuk pelacakan perkembangan siswa.
-6. Klik **Save Attendance**.
+Cara termudah untuk mengisi absensi adalah langsung dari halaman utama setelah Anda mengajar:
 
-[Image desc: Form Input Attendance]
+1.  Buka halaman **Dashboard**.
+2.  Cari bagian **Jadwal Hari Ini**.
+3.  Temukan kelas yang baru saja selesai, lalu klik tombol **Isi Presensi**.
 
-## Menyelesaikan Sesi
-Setelah absensi tersimpan:
-1. Kembali ke daftar **My Sessions**.
-2. Klik tombol untuk **Mark as Completed** pada sesi tersebut.
+![Tombol Isi Presensi di Dashboard](/docs/teacher/button-isi-presensi.png)
+
+## Mengisi Form Presensi
+
+Setelah mengeklik tombol, sebuah jendela (modal) akan muncul. Ikuti langkah ini:
+
+1.  **Pilih Status**: Untuk setiap siswa, pilih apakah mereka **Hadir**, **Absen** (Alfa), atau **Izin**.
+    *   *Catatan: Sesi akan memotong sisa paket siswa jika statusnya Hadir atau Absen.*
+2.  **Tulis Catatan (Progres)**: Isi kolom catatan dengan materi yang diajarkan hari ini (misal: "Latihan tangga nada C mayor, lancar"). Catatan ini sangat berguna agar Anda tidak lupa di pertemuan berikutnya.
+3.  **Simpan**: Klik tombol **Simpan Presensi**.
+
+![Formulir Presensi Siswa](/docs/teacher/form-presensi.png)
+
+## Status Sesi Mengajar
+
+Sistem akan otomatis mengubah status sesi Anda berdasarkan data yang Anda masukkan:
+
+*   **Scheduled**: Sesi belum dimulai atau absensi belum diisi sama sekali.
+*   **Ongoing**: Absensi baru diisi sebagian (misal hanya 1 dari 2 siswa).
+*   **Completed**: Absensi sudah diisi lengkap untuk semua siswa. **(Hanya sesi berstatus ini yang akan dihitung dalam gaji).**
 
 <Mermaid
   chart={`
 stateDiagram-v2
-    Scheduled --> FormAbsensi : Guru Klik Attendance
-    FormAbsensi --> Scheduled : Simpan Hadir/Sakit/Alfa
-    Scheduled --> Completed : Guru Klik Mark as Completed
-    Completed --> Payroll : Masuk ke Hitungan Gaji
+    Scheduled --> FormPresensi : Klik 'Isi Presensi'
+    FormPresensi --> Ongoing : Baru diisi sebagian
+    FormPresensi --> Completed : Sudah diisi semua siswa
+    Completed --> Payroll : Masuk Hitungan Gaji
 `}
 />
+
+---
+
+### Tanya Jawab (FAQ)
+
+**Bagaimana jika saya lupa mengisi absensi kemarin?**
+Anda bisa membuka menu **My Sessions**, cari tanggal kemarin, dan klik tombol **Attendance** pada sesi yang dimaksud.
+
+**Siswa saya tidak hadir karena sakit dan sudah izin sebelumnya, pilih yang mana?**
+Pilih status **Izin** (Excused). Status ini biasanya tidak memotong paket siswa, tergantung kebijakan sekolah yang diatur oleh Admin.

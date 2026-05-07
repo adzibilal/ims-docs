@@ -1,21 +1,71 @@
 ---
-title: Melihat Kelas & Jadwal
-description: Panduan memeriksa jadwal mengajar
+title: Mengelola Kelas & Jadwal
+description: Cara melihat daftar kelas, jadwal mingguan, dan detail sesi pertemuan.
 ---
 
-# Melihat Kelas & Jadwal
+# Mengelola Kelas & Jadwal
 
-## 1. My Classes
-Melihat daftar program yang Anda pegang.
-- Buka **My Classes**.
-- Anda dapat melihat semua kelas aktif Anda.
-- Klik nama kelas untuk melihat daftar nama siswa (Enrollment) di dalam kelas tersebut.
+Di IMS Dashboard, informasi kelas Anda disusun secara mendalam agar Anda bisa memantau perkembangan setiap siswa.
 
-## 2. My Schedules
-- Buka menu **My Schedules** untuk melihat pola jadwal mingguan Anda (misalnya setiap Selasa dan Kamis jam 15.00).
+## 1. Daftar Kelas (My Classes)
+Halaman ini menampilkan semua kelas aktif yang Anda ajar.
 
-## 3. My Sessions
-Sesi adalah pertemuan aktual.
-- Buka **My Sessions**.
-- Anda dapat mencari tanggal tertentu untuk melihat jam berapa saja Anda harus mengajar pada tanggal tersebut.
-- Sesi berstatus *Scheduled* artinya belum terlaksana. Sesi *Completed* artinya sudah selesai dan absensinya sudah dicatat.
+*   **Tampilan**: Anda bisa melihat nama kursus, instrumen, ruangan, dan jumlah siswa terdaftar.
+*   **Aksi**: Klik tombol **Detail & Presensi** untuk masuk ke halaman detail kelas.
+
+![Daftar Kelas Saya](/docs/teacher/my-classes.png)
+
+## 2. Halaman Detail Kelas
+Ini adalah pusat informasi untuk satu kelas tertentu. Di sini terdapat dua tab utama:
+
+### Tab: Sesi Kelas
+Daftar semua pertemuan (sesi) yang sudah lewat maupun yang akan datang.
+*   Anda bisa melihat status setiap sesi (Scheduled, Ongoing, Completed).
+*   Anda bisa mengisi absensi dengan klik tombol **Presensi**.
+*   Jika sesi sudah selesai tapi status belum berubah, Anda bisa klik **Selesai** secara manual.
+
+### Tab: Daftar Siswa (Sangat Berguna!)
+Di sini Anda bisa melihat daftar siswa yang terdaftar di kelas tersebut. Jika Anda mengklik nama siswa, Anda akan melihat:
+*   **Riwayat Kehadiran**: Kapan saja siswa tersebut hadir, izin, atau absen.
+*   **Sisa Sesi**: Mengetahui sisa paket pertemuan siswa (sangat berguna untuk mengingatkan siswa jika paketnya hampir habis).
+*   **Jadwal Make-up**: Jika siswa pernah absen/izin, Anda bisa menjadwalkan kelas pengganti (*Make-up*) langsung dari sini.
+
+![Detail Kelas & Riwayat Siswa](/docs/teacher/class-detail.png)
+
+## 3. Fitur Lanjutan Guru (Penting!)
+
+Di halaman Detail Kelas, Anda juga memiliki wewenang untuk melakukan beberapa perubahan penting:
+
+### A. Mengubah Data Kelas (Ubah Kelas)
+Jika ada kesalahan pada pembuatan kelas atau Anda ingin mengubah jadwal tetapnya:
+1.  Di bagian atas halaman Detail Kelas, klik tombol **Ubah Kelas**.
+2.  Anda dapat mengubah **Nama Kelas**, **Kapasitas**, dan **Jadwal Rutin** (hari dan jam).
+3.  Klik **Simpan Kelas**.
+> *Catatan: Mengubah jadwal rutin hanya akan mengubah pola jadwal di masa depan, tidak mengubah sesi yang sudah terjadi.*
+
+### B. Memindahkan atau Mengubah Satu Sesi (Ubah Sesi)
+Jika jadwal rutin hari Rabu tiba-tiba harus pindah ke hari Kamis *hanya untuk minggu ini saja* (atau jika Anda digantikan oleh guru infal):
+1.  Buka Tab **Sesi Kelas**.
+2.  Cari tanggal sesi yang ingin diubah, lalu klik **Ubah** di sebelah kanannya.
+3.  Anda bisa mengganti **Tanggal**, **Jam**, **Ruangan**, atau bahkan **Guru Pengganti** untuk sesi tersebut saja.
+4.  **Wajib**: Isi kolom *Alasan Perubahan* agar Admin dan orang tua tahu mengapa jadwal berubah.
+5.  Klik **Simpan Perubahan**.
+
+### C. Menjadwalkan Kelas Pengganti (Make-up Class)
+Jika ada siswa yang izin sakit dan berhak mendapat kelas pengganti:
+1.  Buka Tab **Daftar Siswa** dan klik nama siswa tersebut.
+2.  Di riwayat kehadirannya, cari tanggal di mana ia "Izin" atau "Absen".
+3.  Klik tombol **Jadwalkan Make-up**.
+4.  Pilih sesi kelas lain yang masih kosong di masa depan untuk menempatkan siswa tersebut.
+5.  Siswa otomatis akan masuk ke daftar hadir sesi pengganti tersebut.
+
+![Tombol Ubah & Jadwalkan Make-up](/docs/teacher/advanced-features.png)
+
+## 4. Kalender (Calendar)
+Tampilan visual jadwal Anda dalam bentuk kalender bulanan atau mingguan. Ini memudahkan Anda melihat jam-jam kosong atau jadwal yang padat secara lebih intuitif.
+
+---
+
+### Tips untuk Guru:
+> [!TIP]
+> Selalu cek **Sisa Sesi** siswa di Tab Daftar Siswa. Jika sisa sesi tinggal 1 atau 2, Anda bisa mengingatkan orang tua siswa untuk melakukan perpanjangan paket agar proses belajar tidak terputus.

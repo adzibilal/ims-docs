@@ -1,40 +1,65 @@
 ---
-title: Teacher Dashboard
-description: Panduan dasar untuk masuk dan bernavigasi bagi Guru
+title: Panduan Guru
+description: Selamat datang di IMS Dashboard! Pelajari cara memulai dan menggunakan fitur utama Anda.
 ---
 
-# Getting Started: Teacher Dashboard
+# Memulai: Dashboard Guru
 
-Selamat datang di IMS Dashboard! Sebagai pengajar, Anda menggunakan aplikasi ini untuk mengatur operasional mengajar sehari-hari.
+Selamat datang di **IMS Dashboard**! Aplikasi ini dirancang untuk memudahkan Anda mengelola jadwal mengajar, mencatat absensi siswa, memantau progres materi, hingga melihat honor mengajar dengan transparan.
 
-## Alur Kerja Utama Guru
+## Langkah 1: Cara Masuk (Login)
 
-Sebagai guru, tugas administratif Anda di sistem ini sangat sederhana:
+Untuk mulai menggunakan aplikasi, ikuti langkah mudah berikut:
+
+1.  Buka link IMS Dashboard yang diberikan oleh Admin.
+2.  Masukkan **Alamat Email** Anda.
+3.  Masukkan **Password** Anda.
+    *   *Tips: Jika Anda lupa password, silakan hubungi Admin untuk melakukan reset.*
+4.  Klik tombol **Sign In**.
+
+![Halaman Login Guru](/docs/teacher/login.png)
+
+## Langkah 2: Mengenal Menu Navigasi
+
+Di sisi kiri (sidebar), Anda akan menemukan menu-menu utama:
+
+*   **Dashboard**: Halaman utama untuk melihat jadwal hari ini dan ringkasan cepat.
+*   **My Classes**: Daftar semua kelas yang Anda pegang. Di sini Anda bisa melihat detail siswa dan riwayat pertemuan mereka.
+*   **Payroll**: Halaman untuk melihat rincian honor mengajar dan mengunduh slip gaji PDF.
+*   **Calendar**: Tampilan kalender untuk melihat jadwal mengajar secara visual.
+
+![Tampilan Dashboard Guru](/docs/teacher/dashboard.png)
+
+## Alur Kerja Harian Guru
+
+Agar administrasi mengajar Anda lancar dan honor terhitung dengan benar, pastikan mengikuti alur berikut:
 
 <Mermaid
   chart={`
-flowchart LR
-    A["Cek Jadwal Hari Ini"] --> B["Ajar Siswa di Kelas"]
-    B --> C["Isi Absensi & Catatan"]
-    C --> D["Ubah Status Sesi ke Completed"]
-    D -. Akhir Bulan .-> E["Lihat Slip Gaji (Payroll)"]
+flowchart TD
+    A["1. Cek Jadwal Hari Ini di Dashboard"] --> B["2. Mengajar di Kelas"]
+    B --> C["3. Klik 'Isi Presensi' & Catat Materi"]
+    C --> D["4. Sesi Berubah Jadi 'Completed'"]
+    D --> E["5. Honor Otomatis Masuk ke Payroll"]
 `}
 />
 
-## 1. Cara Login
+---
 
-1. Buka tautan IMS Dashboard.
-2. Masukkan **Email** dan **Password** Anda. (Minta password ke admin jika lupa).
-3. Klik **Sign In**.
+## Pengaturan Profil & Password
 
-[Image desc: Halaman Login Teacher]
+Anda dapat mengubah data diri atau mengganti password secara mandiri:
 
-## 2. Navigasi Dashboard
+1.  Lihat ke pojok kanan atas layar Anda, klik pada **Nama/Foto Anda**.
+2.  Pilih menu **My Profile**.
+3.  Di halaman profil, Anda bisa:
+    *   **Ubah Foto**: Klik ikon kamera pada foto profil untuk mengunggah foto baru.
+    *   **Ganti Password**: Masukkan password saat ini, lalu masukkan password baru Anda, dan klik simpan.
 
-- **Dashboard**: Ringkasan kelas hari ini.
-- **My Classes**: Daftar kelas reguler.
-- **My Schedules**: Kalender mengajar rutin.
-- **My Sessions**: Detail pertemuan aktual.
-- **Payroll**: Slip honor.
+![Pengaturan Profil](/docs/teacher/profile-settings.png)
 
-[Image desc: Tampilan Dashboard Utama Guru]
+---
+
+### Tips Penting:
+> [!IMPORTANT]
+> **Pastikan Status Sesi Menjadi "Completed"**: Hanya sesi dengan status *Completed* (selesai) yang akan dihitung sebagai honor mengajar di akhir bulan. Status ini akan berubah otomatis jika Anda sudah mengisi absensi untuk **semua** siswa di sesi tersebut.
