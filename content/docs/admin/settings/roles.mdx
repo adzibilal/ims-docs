@@ -5,6 +5,8 @@ description: Konfigurasi hak akses
 
 # Roles & Permissions
 
+![Role & Permission](/docs/role-and-permission.png)
+
 Hak akses mengatur siapa yang boleh melihat menu tertentu.
 
 <Mermaid
@@ -12,11 +14,10 @@ Hak akses mengatur siapa yang boleh melihat menu tertentu.
 pie title Distribusi Akses Menu Default
     "Admin Utama" : 100
     "Teacher" : 20
-    "Student" : 10
 `}
 />
 
-- **Roles**: Adalah jabatan (Admin, Teacher, Student).
+- **Roles**: Adalah jabatan (Admin, Teacher).
 - **Permissions**: Adalah perizinan spesifik (Lihat Data Siswa, Edit Keuangan, dll).
 
 Sebaiknya konfigurasi ini tidak diubah secara sembarangan, kecuali jika Anda mengerti struktur RBAC (Role-Based Access Control) di dalam sistem Laravel.

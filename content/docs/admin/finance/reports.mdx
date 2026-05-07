@@ -1,24 +1,53 @@
 ---
 title: Reports & Laporan
-description: Melihat analitik dan laporan kinerja
+description: Panduan melihat dan menganalisis laporan operasional dan akademik.
 ---
 
-# Reports
+# Reports & Laporan
 
-Sistem IMS menyediakan beberapa report dasar untuk mengukur kinerja.
+Sistem IMS menyediakan beberapa laporan (report) dasar untuk membantu Anda mengukur kinerja operasional, akademik, dan keuangan. Anda dapat menemukan menu ini di bawah bagian **Reports**.
 
-## 1. Attendance Report
-Menampilkan metrik kehadiran. 
-- Berapa persen siswa yang hadir bulan ini?
-- Berapa banyak kelas yang terpaksa dijadwalkan ulang?
+Setiap laporan memiliki fitur **Filter** yang memungkinkan Anda melihat data berdasarkan rentang tanggal (periode) tertentu, atau memfokuskan pencarian pada Guru, Siswa, atau Kursus tertentu.
 
-[Image desc: Grafik Attendance Report]
+## 1. Attendance Report (Laporan Kehadiran)
 
-## 2. Teacher & Student Report
-Menganalisis pertumbuhan jumlah pendaftaran siswa baru dan statistik beban mengajar per guru.
+Laporan ini digunakan untuk memantau detail riwayat kehadiran.
 
-## 3. Finance (Ledger) Report
-Rangkuman sederhana dari arus kas:
-- **Pemasukan**: Berasal dari Payments (Pembayaran pesanan).
-- **Pengeluaran**: Berasal dari Payroll (Gaji guru yang berstatus Paid).
-- **Saldo Netto**: Selisih pemasukan dan pengeluaran.
+- **Kegunaan**: Melacak status kehadiran (Hadir, Absen, Izin) dari seluruh sesi kelas.
+- **Filter Tersedia**: Rentang Tanggal, Guru, Siswa, Kursus, dan Status Kehadiran.
+- **Informasi yang Ditampilkan**: Tanggal Sesi, Nama Kelas, Guru, Siswa, Status Kehadiran, dan Catatan (Notes).
+
+![Halaman Attendance Report](/docs/attendance-report.png)
+
+## 2. Teacher Report (Laporan Kinerja Guru)
+
+Laporan ini digunakan untuk menganalisis beban mengajar dan efektivitas masing-masing guru.
+
+- **Kegunaan**: Melihat seberapa aktif seorang guru dalam periode waktu tertentu. Hanya sesi dengan status _Completed_ (selesai) yang dihitung di sini.
+- **Filter Tersedia**: Rentang Tanggal, Guru, dan Kursus.
+- **Informasi yang Ditampilkan**:
+  - **Total Sessions**: Jumlah pertemuan yang telah selesai diajar.
+  - **Total Classes**: Jumlah kelas aktif yang dipegang.
+  - **Total Students**: Jumlah total murid unik yang diajar oleh guru tersebut.
+
+## 3. Student Report (Laporan Siswa)
+
+Laporan ini berguna untuk memantau keaktifan siswa dan tingkat absensi mereka.
+
+- **Kegunaan**: Mengevaluasi siswa mana yang rajin hadir dan siswa mana yang sering absen.
+- **Filter Tersedia**: Rentang Tanggal, Siswa, Kursus, Guru, dan Level (misal: Beginner, Intermediate).
+- **Informasi yang Ditampilkan**:
+  - **Daftar Kelas**: Kelas apa saja yang diikutinya saat ini.
+  - **Total Hadir (Attended)**: Berapa kali siswa masuk kelas.
+  - **Total Absen (Absent)**: Berapa kali siswa absen.
+
+## 4. Finance (Ledger) Report
+
+Merupakan rangkuman sederhana dari arus kas (_cash flow_) lembaga Anda. Laporan ini juga bisa diakses melalui menu **Finance**.
+
+- **Pemasukan (IN)**: Uang masuk yang berasal dari pembayaran paket siswa (Payments).
+- **Pengeluaran (OUT)**: Uang keluar yang berasal dari penggajian guru (Payroll) yang sudah berstatus _Paid_.
+- **Saldo Netto (Balance)**: Selisih antara Pemasukan dan Pengeluaran Anda.
+
+![Tampilan Finance Ledger](/docs/laporan-keuangan.png)
+![Tampilan Finance Ledger](/docs/finance-report.png)
