@@ -1,24 +1,73 @@
 ---
 title: Orders & Invoices
-description: Membuat tagihan untuk siswa
+description: Mengelola pesanan dan tagihan untuk siswa
 ---
 
 # Orders & Invoices
 
-## 1. Membuat Pesanan (Order)
-Ketika siswa mendaftar atau waktunya perpanjangan paket:
-1. Buka menu **Commerce** > **Orders**.
-2. Klik **+ Add New**.
-3. Pilih **Siswa**.
-4. Pilih **Package** yang ingin dibeli.
-5. Klik **Save**. Order baru akan berstatus **Unpaid**.
+Fitur Orders digunakan untuk mengelola pesanan kursus, pendaftaran kelas, dan tagihan (invoice) untuk siswa. Fitur ini mendukung pembuatan pesanan untuk beberapa siswa sekaligus, perpanjangan kursus, dan penambahan item biaya tambahan.
 
-[Image desc: Halaman Pembuatan Order]
+## 1. Membuat Pesanan Baru (Create Order)
 
-## 2. Mengunduh Invoice PDF
-Sistem akan otomatis merancang invoice PDF:
-1. Di daftar Orders, cari pesanan yang baru dibuat.
-2. Klik ikon aksi **Download Invoice**.
-3. Berikan file PDF tersebut kepada siswa atau wali murid untuk ditagihkan.
+Untuk membuat pesanan baru, ikuti langkah-langkah berikut:
 
-[Image desc: Tampilan Invoice PDF]
+### Langkah 1: Buka Menu Orders
+Navigasikan ke menu **Commerce** > **Orders** pada sidebar, kemudian klik tombol **+ Add New** atau **Buat Pesanan**.
+
+### Langkah 2: Pilih Siswa
+1. Klik tombol **+ Pilih Siswa**.
+2. Cari siswa berdasarkan nama atau kode siswa pada kolom pencarian.
+3. Centang siswa yang ingin ditambahkan. Anda dapat memilih lebih dari satu siswa untuk membuat pesanan massal.
+4. Klik **Selesai**.
+
+{/* ![Modal Pilih Siswa](images/modal-pilih-siswa.png) */}
+*Catatan: Jika siswa belum terdaftar, Anda harus mendaftarkannya terlebih dahulu di menu Siswa.*
+
+### Langkah 3: Tambah Kursus & Kelas
+Untuk setiap siswa yang dipilih, Anda dapat menentukan kursus dan kelas yang akan diambil:
+1. Pilih **Kursus** dari dropdown.
+2. Pilih **Kelas** yang tersedia untuk kursus tersebut.
+3. Harga akan terisi otomatis, namun Anda dapat mengubahnya jika diperlukan.
+4. Tentukan jumlah **Sesi** (default 8).
+5. Pilih **Tgl Mulai** (Opsional).
+
+### Langkah 4: Perpanjangan (Renewal) - Opsional
+Jika siswa ingin memperpanjang kursus yang pernah diambil sebelumnya:
+1. Klik tautan **Perpanjang** pada kartu siswa.
+2. Pilih kursus dari riwayat siswa yang ingin diperpanjang.
+3. Sistem akan otomatis mengisi data kursus dan kelas.
+
+{/* ![Modal Perpanjang](images/modal-perpanjang.png) */}
+
+### Langkah 5: Tambah Item Tambahan (Opsional)
+Jika ada biaya tambahan seperti pendaftaran atau buku:
+1. Klik **Tambah Item Tambahan**.
+2. Masukkan deskripsi dan harga item tersebut.
+
+### Langkah 6: Pembayaran & Simpan
+1. Di kolom kanan (Ringkasan Pesanan), periksa total akhir.
+2. Pilih **Metode Pembayaran** (Tunai, Debit, Kredit, Transfer).
+3. Masukkan **Jumlah Bayar**. Jika jumlah bayar kurang dari total, status order akan menjadi **Unpaid**. Jika lunas, status menjadi **Paid**.
+4. Klik **Buat Pesanan**.
+
+{/* ![Halaman Buat Pesanan](images/halaman-buat-pesanan.png) */}
+
+---
+
+## 2. Mengelola Pesanan
+
+Setelah pesanan dibuat, Anda dapat mengelolanya melalui daftar pesanan.
+
+### Menambahkan Pembayaran (Add Payment)
+Jika pesanan berstatus **Unpaid**:
+1. Cari pesanan di daftar Orders dan klik tombol **Detail** atau **Show**.
+2. Gulir ke bagian Pembayaran dan klik **Tambah Pembayaran**.
+3. Masukkan jumlah yang dibayarkan dan metode pembayaran.
+4. Jika total pembayaran sudah mencukupi, status akan otomatis berubah menjadi **Paid**.
+
+### Mengunduh Invoice
+1. Pada daftar Orders atau halaman detail order.
+2. Klik ikon atau tombol **Download Invoice**.
+3. File PDF invoice akan diunduh dan siap diberikan kepada siswa.
+
+{/* ![Contoh Invoice](images/contoh-invoice.png) */}
